@@ -1,0 +1,26 @@
+----------------------------------------------------------------
+Mon Dec 02 22:08:42 EST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-016e-c9bb-3f42-00001c3df470 
+on database directory /home/will/cv/CS590CC/PA3EC/gigapaxos/reconfiguration_DB/reconfiguration_DBCTRC0 with class loader sun.misc.Launcher$AppClassLoader@1b6d3586 
+Loaded from file:/home/will/cv/CS590CC/PA3EC/gigapaxos/jars/gigapaxos-1.0.08.jar
+java.vendor=Private Build
+java.runtime.version=1.8.0_222-8u222-b10-1ubuntu1~18.04.1-b10
+user.dir=/home/will/cv/CS590CC/PA3EC/gigapaxos
+os.name=Linux
+os.arch=amd64
+os.version=5.0.0-050000-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Dec 02 22:08:42 EST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a13ec033-016e-c9bb-3f42-00001c3df470 
+on database directory /home/will/cv/CS590CC/PA3EC/gigapaxos/paxos_logs/paxos_dbCTRC0 with class loader sun.misc.Launcher$AppClassLoader@1b6d3586 
+Loaded from file:/home/will/cv/CS590CC/PA3EC/gigapaxos/jars/gigapaxos-1.0.08.jar
+java.vendor=Private Build
+java.runtime.version=1.8.0_222-8u222-b10-1ubuntu1~18.04.1-b10
+user.dir=/home/will/cv/CS590CC/PA3EC/gigapaxos
+os.name=Linux
+os.arch=amd64
+os.version=5.0.0-050000-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

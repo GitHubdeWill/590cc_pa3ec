@@ -1,0 +1,73 @@
+2019-12-02 22:08:41 [WARNING] GIGAPAXOS_DATA_DIR must be an absolute path; specifying "." is deprecated and discouraged.
+2019-12-02 22:08:42 [INFO] CTRC0:CTRC0 listening on /127.0.0.1:5000
+2019-12-02 22:08:42 [INFO] MessageNIOTransport:CTRC0:0 listening on channel sun.nio.ch.ServerSocketChannelImpl[/127.0.0.1:5000] with ssl mode CLEAR
+2019-12-02 22:08:42 [INFO] Attempting getDefaultConn() to DB jdbc:derby:./reconfiguration_DB/reconfiguration_DBCTRC0
+2019-12-02 22:08:42 [INFO] Connected to and created database reconfiguration_DBCTRC0
+2019-12-02 22:08:42 [INFO] Table checkpointCTRC0 already exists
+2019-12-02 22:08:42 [INFO] Table checkpointCTRC0 already exists
+2019-12-02 22:08:42 [INFO] Table demandCTRC0 already exists
+2019-12-02 22:08:42 [INFO] Table nodeconfigCTRC0 already exists
+2019-12-02 22:08:42 [INFO] DerbyRCDBCTRC0 created (or exists) tables [checkpointCTRC0, messagesCTRC0, demandCTRC0, nodeconfigCTRC0]
+2019-12-02 22:08:42 [INFO] DerbyRCDBCTRC0 proceeding with node config version CTAR0:/127.0.0.1:4000 
+CTRC0:/127.0.0.1:5000 : 
+2019-12-02 22:08:42 [INFO] DerbyRCDBCTRC0 initializing with RC records in DB = 
+2019-12-02 22:08:42 [INFO] JSONMessengerCTRC0 starting worker with ssl mode CLEAR
+2019-12-02 22:08:42 [INFO] MessageNIOTransport:null:0 listening on channel sun.nio.ch.ServerSocketChannelImpl[/127.0.0.1:34567] with ssl mode CLEAR
+2019-12-02 22:08:42 [INFO] JournalerCTRC0 created new log file ./paxos_logs/paxos_journal.CTRC0/log.CTRC0.16ec9bb40d6
+2019-12-02 22:08:42 [INFO] SQLPaxosLoggerCTRC0 attempting getCursorConn() to db jdbc:derby:./paxos_logs/paxos_dbCTRC0
+2019-12-02 22:08:42 [INFO] SQLPaxosLoggerCTRC0 connected to and created database paxos_dbCTRC0
+2019-12-02 22:08:42 [INFO] Table checkpointCTRC0 already exists
+2019-12-02 22:08:42 [INFO] Table messagesCTRC0 already exists
+2019-12-02 22:08:42 [INFO] Table messagesCTRC0 already exists
+2019-12-02 22:08:42 [INFO] Table pauseCTRC0 already exists
+2019-12-02 22:08:42 [INFO] Table prev_checkpointCTRC0 already exists
+2019-12-02 22:08:42 [INFO] Created tables checkpointCTRC0 and messagesCTRC0 and pauseCTRC0
+2019-12-02 22:08:42 [INFO] SQLPaxosLoggerCTRC0 : CHECKPOINTCTRC0 : STATE : 32672
+2019-12-02 22:08:42 [INFO] SQLPaxosLoggerCTRC0 : MESSAGESCTRC0 : MESSAGE : 5242880
+2019-12-02 22:08:42 [INFO] PaxosManager:CTRC0 beginning to recover checkpoints
+2019-12-02 22:08:42 [INFO] CTRC0 initialized paxos coordinator CTRC0:0 with members [64459278]; PaxosAcceptor:CTRC0 null {recovered_state=[{"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["CTRC0"],"EPOCH":[...]_CHANGE":"REPLICATE_ALL","RC_EPOCH_MAP":[],"NAME":"AR_RC_NODES"}]}
+2019-12-02 22:08:42 [INFO] CTRC0 initialized paxos coordinator RC_NODES:0 with members [64459278]; PaxosAcceptor:CTRC0 null {recovered_state=[{"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["CTRC0"],"EPOCH":[...]EPOCH_MAP":[{"RC_NODE":"CTRC0","RC_EPOCH":0}],"NAME":"RC_NODES"}]}
+2019-12-02 22:08:42 [INFO] CTRC0 initialized paxos coordinator AR_NODES:0 with members [64459278]; PaxosAcceptor:CTRC0 null {recovered_state=[{"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["CTAR0"],"EPOCH":[...]N_ACTIVES_CHANGE":"DEFAULT","RC_EPOCH_MAP":[],"NAME":"AR_NODES"}]}
+2019-12-02 22:08:42 [INFO] PaxosManager:CTRC0 has recovered checkpoints for 3 paxos groups
+2019-12-02 22:08:42 [INFO] PaxosManager:CTRC0 beginning to roll forward logged messages
+2019-12-02 22:08:42 [INFO] SQLPaxosLoggerCTRC0 found 0 instances unpaused before last shutdown
+2019-12-02 22:08:42 [INFO] SQLPaxosLoggerCTRC0 rolling forward logged messages from logfile ./paxos_logs/paxos_journal.CTRC0/log.CTRC0.16ec9bb40d6 onwards
+2019-12-02 22:08:42 [INFO] PaxosManager:CTRC0 rolled forward 0 messages total across 3 paxos groups
+2019-12-02 22:08:42 [INFO] PaxosManager:CTRC0 recovered paxos instance CTRC0:CTRC0:0:[A:(0:64459278, 1)]PaxosAcceptor:CTRC0; isActive = true 
+2019-12-02 22:08:42 [INFO] PaxosManager:CTRC0 recovered paxos instance CTRC0:RC_NODES:0:[A:(0:64459278, 1)]PaxosAcceptor:CTRC0; isActive = true 
+2019-12-02 22:08:42 [INFO] PaxosManager:CTRC0 recovered paxos instance CTRC0:AR_NODES:0:[A:(0:64459278, 1)]PaxosAcceptor:CTRC0; isActive = true 
+2019-12-02 22:08:42 [INFO] ------------------PaxosManager:CTRC0 recovery complete-------------------
+2019-12-02 22:08:42 [INFO] PaxosManager:CTRC0 creating client messenger at /127.0.0.1:5100; (offset=100)
+2019-12-02 22:08:42 [INFO] MessageNIOTransport:null:0 listening on channel sun.nio.ch.ServerSocketChannelImpl[/127.0.0.1:5100] with ssl mode CLEAR
+2019-12-02 22:08:42 [INFO] RepliconfigurableReconfiguratorDB:CTRC0 created reconfigurator group CTRC0 with members [CTRC0]: {"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["CTRC0"],"EPOCH":0,"NEW_ACTIVES":["CTRC0"],"RECONFIGURE_UPON_ACTIVES_CHANGE":"DEFAULT","RC_EPOCH_MAP":[],"NAME":"CTRC0"}
+{"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["CTAR0"],"EPOCH":0,"NEW_ACTIVES":["CTAR0"],"RECONFIGURE_UPON_ACTIVES_CHANGE":"REPLICATE_ALL","RC_EPOCH_MAP":[],"NAME":"CassandraTables0"}
+{"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["CTAR0"],"EPOCH":0,"NEW_ACTIVES":["CTAR0"],"RECONFIGURE_UPON_ACTIVES_CHANGE":"REPLICATE_ALL","RC_EPOCH_MAP":[],"NAME":"AR_AR_NODES"}
+{"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["CTAR0"],"EPOCH":0,"NEW_ACTIVES":["CTAR0"],"RECONFIGURE_UPON_ACTIVES_CHANGE":"REPLICATE_ALL","RC_EPOCH_MAP":[],"NAME":"AR_RC_NODES"}
+2019-12-02 22:08:42 [INFO] RepliconfigurableReconfiguratorDB:CTRC0 after recovery has node config records = 
+CTRC0 : CTRC0:0:READY[CTRC0]
+RC_NODES : RC_NODES:0:READY[CTRC0]
+AR_NODES : AR_NODES:0:READY[CTAR0]
+2019-12-02 22:08:42 [INFO] RC.CTRC0 creating  client messenger at /127.0.0.1:5100
+2019-12-02 22:08:42 [INFO] RC.CTRC0 adding self as demultiplexer to existing  client messenger
+2019-12-02 22:08:42 [INFO] RC.CTRC0 registering types [REQUEST_ACTIVE_REPLICAS, CREATE_SERVICE_NAME, DELETE_SERVICE_NAME]
+2019-12-02 22:08:42 [INFO] RC.CTRC0 registering types [REQUEST_ACTIVE_REPLICAS, ECHO_REQUEST, DEMAND_REPORT, ACK_DROP_EPOCH_FINAL_STATE, ACK_STOP_EPOCH, RECONFIGURE_RC_NODE_CONFIG, CREATE_SERVICE_NAME, DELETE_SERVICE_NAME, RC_RECORD_REQUEST, RECONFIGURE_ACTIVE_NODE_CONFIG, ACK_START_EPOCH]
+2019-12-02 22:08:42 [INFO] {0} registering types [REQUEST_ACTIVE_REPLICAS, ECHO_REQUEST, REPLICABLE_CLIENT_REQUEST, CREATE_SERVICE_NAME, DELETE_SERVICE_NAME, ACTIVE_REPLICA_ERROR] for TXUtils.GigaPaxosClient
+2019-12-02 22:08:42 [INFO] {0} registering types [RECONFIGURE_RC_NODE_CONFIG, RECONFIGURE_ACTIVE_NODE_CONFIG] for TXUtils.GigaPaxosClient
+2019-12-02 22:08:42 [INFO] TXUtils.GigaPaxosClient registering types [REPLICABLE_CLIENT_REQUEST] for TXUtils.GigaPaxosClient
+2019-12-02 22:08:42 [INFO] MessageNIOTransport:null:0 listening on channel sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:38233] with ssl mode CLEAR
+2019-12-02 22:08:42 [INFO] TXUtils.GigaPaxosClient38233 listening on /0:0:0:0:0:0:0:0:38233; ssl mode = CLEAR; client port offset = 100
+2019-12-02 22:08:42 [INFO] AR.CTRC0 maybe creating  client messenger at /127.0.0.1:5100
+2019-12-02 22:08:42 [INFO] AR.CTRC0 adding self as demultiplexer to existing  client messenger
+2019-12-02 22:08:42 [INFO] AbstractPacketDemultiplexer[4]:CTRC0-clientFacing registering types [] for AR.CTRC0
+2019-12-02 22:08:42 [INFO] AbstractPacketDemultiplexer[4]:CTRC0 registering types [ECHO_REQUEST, STOP_EPOCH, REPLICABLE_CLIENT_REQUEST, REQUEST_EPOCH_FINAL_STATE, EPOCH_FINAL_STATE, START_EPOCH, DROP_EPOCH_FINAL_STATE] for AR.CTRC0
+2019-12-02 22:08:42 [INFO] CTRC0:/127.0.0.1:5000  server ready (total number of servers=2)
+2019-12-02 22:08:42 [INFO] RC.CTRC0:HTTP:/127.0.0.1:5300 ready
+2019-12-02 22:10:42 [INFO] PaxosManager:CTRC0 deactivated 3 idle instances [CTRC0, AR_NODES, RC_NODES]; has 0 active instances[]; avg_pause_delay = 0us; avg_deactivation_loop_delay = 6ms; total_instances_created = 3; total_current_instances = 3
+2019-12-02 22:51:49 [INFO] RC.CTRC0 received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:53322:null:null from client /127.0.0.1:53322 
+2019-12-02 22:51:49 [INFO] RC.CTRC0 sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:53322:[/127.0.0.1:4100]:null:null back to client
+2019-12-02 22:52:38 [INFO] RC.CTRC0 received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:53528:null:null from client /127.0.0.1:53528 
+2019-12-02 22:52:38 [INFO] RC.CTRC0 sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:53528:[/127.0.0.1:4100]:null:null back to client
+2019-12-02 22:54:24 [INFO] RC.CTRC0 received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:53970:null:null from client /127.0.0.1:53970 
+2019-12-02 22:54:24 [INFO] RC.CTRC0 sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:53970:[/127.0.0.1:4100]:null:null back to client
+2019-12-02 22:55:06 [INFO] RC.CTRC0 received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:54140:null:null from client /127.0.0.1:54140 
+2019-12-02 22:55:06 [INFO] RC.CTRC0 sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:54140:[/127.0.0.1:4100]:null:null back to client
